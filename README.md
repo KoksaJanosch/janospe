@@ -1,4 +1,4 @@
-<h1><a href="#janospe" id="janospe">Odevzdávání</a></h1>
+<h1><a>Odevzdávání</a></h1>
 <p>Odevzdávání úkolů do předmětu Úvod do programování 2019/2020. Každý úkol
 odevzdán v jednotlivé složce s příslušnou dokumentací.</p>
 <br>
