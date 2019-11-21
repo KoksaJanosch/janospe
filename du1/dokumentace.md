@@ -1,17 +1,18 @@
 <h1>Domácí úkol 01: zobrazení</h1>
+<p>Dokumentace k souboru <a href="du1_petr_janos.py">du1_petr_janos.py</a></p>
 <ul>
-  <li>Zadání</li>
-  <li>Výsledek</li>
-  <li>Autor</li>
+  <li><a href="#zadani">Zadání</a></li>
+  <li><a href="#vysledek">Výsledek</a></li>
+  <li><a href="#autor">Autor</a></li>
 </ul>
-<h3>Zadání</h3>
+<h3 id="zadani">Zadání</h3>
 <p>Sestrojit program, který ulehčí práci s výpočtem pro válcová tečná zobrazení.
 Uživatel si vybere z nabídky dané zobrazení a následně měřítko, poté se vypíší 
 souřadnice rovnoběžek a poledníků, konkrétně jejich vzdálenost pro rýsování na papíře. Výchozí poloměr Země
 pro tento úkol je 6371,11 km, nicméně může být i zadán uživatelem. <br>
 Program bude počítat Marinovo, Lambertovo, Braunovo a Mercatorovo zobrazení.  
 
-<h3>Výsledek</h3>
+<h3 id="vysledek">Výsledek</h3>
 <b>Uživatelské vstupy:</b>
 <ul style="list-style-type: square">
   <li>Program pracuje dle požadovaného zadání. Nejdříve se uživatele zeptá, 
@@ -42,8 +43,15 @@ Když je zadána 0, program použije výchozí hodnotu pro Zemi, tedy 6371.11 km
 <p>Při spuštění zadá uživatel požadované vstupy (vybere zobrazení, zvolí měřítko a poloměr), vyvolají se nadefinované
 funkce "<i>rovnobezky</i>" a "<i>poledniky</i>", které na základě zvolených vstupů vypočítají jednotlivé vzdálenosti
 a vypíší je v označeném seznamu.</p>
-
-<p>Poznámka:<br>
+<hr>
+<h4>Poznámka:</h4>
+<p>
 Dle zadání by měl program při chybném výběru zobrazení skončit, ale držel jsem se toho, že 
 uživatel spouští program kvůli tomu, aby mu zobrazení vypočítal, proto se ho program ptá dokola, 
 dokud nějaké nevybere. Jinak bych použil <i>quit()</i>.</p>
+<hr>
+<h4 id="autor">Autor</h4>
+<p><b>Petr Janoš</b><br>
+janospe@natur.cuni.cz<br>
+3. ročník BSGG<br>
+obor Sociální geografie a geoinformatika</p>

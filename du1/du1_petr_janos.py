@@ -1,7 +1,5 @@
 import math
 
-R = int(6371.11)
-
 
 # Výpočet poledníků:
 def poledniky():
@@ -16,8 +14,8 @@ def poledniky():
         else:
             poledniky_list.append(poledniky_x)
     # vypíše konečný seznam s poledníky
-    print('Poledníky: ')
-    print(poledniky_list)
+    print('Poledníky: ', poledniky_list)
+
 
 # Výpočet rovnoběžek:
 def rovnobezky():
@@ -47,12 +45,12 @@ def rovnobezky():
         else:
             rovnobezky_list.append(rovnobezky_y)
     # vypíše konečný seznam s rovnoběžkami
-    print('Rovnoběžky: ')
-    print(rovnobezky_list)
+    print('Rovnoběžky: ', rovnobezky_list)
 
 
 # UŽIVATELSKÉ VSTUPY:
-# zobrazení musí být z nabídky, jinak upozorní a znovu se ptá
+
+# Výběr zobrazení: musí být z nabídky, jinak upozorní a znovu se ptá
 while True:
     zobrazeni_vyber = input('Zadejte zobrazení (L/A/B/M): ').upper()
     if zobrazeni_vyber == 'L' or zobrazeni_vyber == 'A' or zobrazeni_vyber == 'B' or zobrazeni_vyber == 'M':
@@ -60,11 +58,22 @@ while True:
     else:
         print('Musíte použít zobrazení z nabídky!')
 
-# měřítko musí být větší jak 0, jinak upozorní a znovu ptá
+# Zvolení měřítka: musí být větší jak 0, jinak upozorní a znovu ptá
 while True:
     meritko = int(input('Zadejte měřítko:  '))
     if meritko == 0 or meritko < 0:
         print('Měřítko musí být větší jak 0.')
+    else:
+        break
+
+# Zvolení poloměru: musí být kladný, pro Zemi zadat 0
+while True:
+    R = float(input('Zadejte poloměr (pro Zemi zadejte nulu): '))
+    if R == 0:
+        R = float(6371.11)
+        break
+    elif R < 0:
+        print('Poloměr musí být kladný.')
     else:
         break
 
