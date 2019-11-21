@@ -7,8 +7,7 @@ odevzdán v jednotlivé složce s příslušnou dokumentací.</p>
   <li><a href="du1">úkol 01 - zonrazení</a></li>
 </ul>
 <hr>
-<b>Autor</b>
-<br>
+<b><h3>Autor</h3></b>
 <p><b>Petr Janoš</b><br>
 3. ročník BSGG<br>
 Obor sociální geografie a geoinformatiky</p>
