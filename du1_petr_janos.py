@@ -5,8 +5,7 @@ import math
 def poledniky():
     poledniky_list = []
     # poledníky v rozsahu -180 až po 180, po 10
-    xx = range(-180, 190, 10)
-    for poledniky_deg in xx:
+    for poledniky_deg in range(-180, 190, 10):
         poledniky_x = round(R * (math.radians(poledniky_deg)) * 100000 / meritko, 1)  # vzorec s přepočtem
         # nesmí být větší jak metr
         if poledniky_x > 100 or poledniky_x < - 100:
@@ -21,8 +20,7 @@ def poledniky():
 def rovnobezky():
     rovnobezky_list = []
     # rovnoběžky v rozsahu -90 až 90
-    xx = range(-90, 100, 10)
-    for rovnobezky_deg in xx:
+    for rovnobezky_deg in range(-90, 100, 10):
         # výběr vzorce dle zvoleného zobrazení
         if zobrazeni_vyber == 'L':
             rovnobezky_y = round(R * (math.sin(math.radians(rovnobezky_deg))) * 100000 / meritko, 1)
