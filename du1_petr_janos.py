@@ -2,7 +2,7 @@ import math
 
 
 # Výpočet poledníků:
-def poledniky():
+def poledniky(R, meritko):
     poledniky_list = []
     # poledníky v rozsahu -180 až po 180, po 10
     for poledniky_deg in range(-180, 190, 10):
@@ -17,7 +17,7 @@ def poledniky():
 
 
 # Výpočet rovnoběžek:
-def rovnobezky():
+def rovnobezky(R, meritko):
     rovnobezky_list = []
     # rovnoběžky v rozsahu -90 až 90
     for rovnobezky_deg in range(-90, 100, 10):
@@ -75,5 +75,5 @@ while True:
     else:
         break
 
-rovnobezky()
-poledniky()
+rovnobezky(R, meritko)
+poledniky(R, meritko)
