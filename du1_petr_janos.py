@@ -31,6 +31,7 @@ def rovnobezky(R, meritko):
         elif zobrazeni_vyber == 'M':
             # dělit nulou nelze
             if rovnobezky_deg == 90:
+                rovnobezky_list.append('-')
                 break
             else:
                 rovnobezky_y = round(R * math.log(1 / math.tan(math.radians((90 - rovnobezky_deg) / 2)))
