@@ -12,8 +12,8 @@ def poledniky(R, meritko):
             poledniky_list.append('-')
         else:
             poledniky_list.append(poledniky_x)
-    # vypíše konečný seznam s poledníky
-    print('Poledníky: ', poledniky_list)
+    # vrátí konečný seznam s poledníky
+    return(poledniky_list)
 
 
 # Výpočet rovnoběžek:
@@ -43,8 +43,8 @@ def rovnobezky(R, meritko):
             rovnobezky_list.append('-')
         else:
             rovnobezky_list.append(rovnobezky_y)
-    # vypíše konečný seznam s rovnoběžkami
-    print('Rovnoběžky: ', rovnobezky_list)
+    # vrátí konečný seznam s rovnoběžkami
+    return (rovnobezky_list)
 
 
 # UŽIVATELSKÉ VSTUPY:
@@ -76,5 +76,8 @@ while True:
     else:
         break
 
-rovnobezky(R, meritko)
-poledniky(R, meritko)
+rovnobezky_seznam = rovnobezky(R, meritko)
+poledniky_seznam = poledniky(R, meritko)
+
+print('Rovnoběžky: ', rovnobezky_seznam)
+print('Poledníky: ', poledniky_seznam)
