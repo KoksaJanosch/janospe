@@ -6,13 +6,14 @@ Dokumentace k souboru [du1_petr_janos.py](du1_petr_janos.py)
 - [Výsledek](Výsledek)
 - [Autor](Autor)
 
-#### Zadání
-Sestrojit program, který ulehčí práci s výpočtem pro válcová tečná zobrazení. Uživatel si vybere z nabídky dané zobrazení a následně měřítko, poté se vypíší souřadnice rovnoběžek a poledníků, konkrétně jejich vzdálenost pro rýsování na papíře. Výchozí poloměr Země pro tento úkol je 6371,11 km, nicméně může být i zadán uživatelem. 
+#### Popis programu
+Program, který ulehčí práci s výpočtem pro válcová tečná zobrazení. Uživatel si vybere z nabídky dané zobrazení a následně měřítko, poté se vypíší souřadnice rovnoběžek a poledníků, konkrétně jejich vzdálenost pro rýsování na papíře. Výchozí poloměr Země pro tento úkol je 6371,11 km, nicméně může být i zadán uživatelem. 
 Program bude počítat Marinovo, Lambertovo, Braunovo a Mercatorovo zobrazení.
 
-#### Výsledek
+
+
 **Uživatelské vstupy:**
-- Program pracuje dle požadovaného zadání. Nejdříve se uživatele zeptá, jaké chce použít **zobrazení** 
+- Nejdříve se uživatele zeptá, jaké chce použít **zobrazení** 
 (zobrazí se i nápověda, z kterých může vybírat). Pokud zadá něco jiného, než z výběru, program ho upozorní, 
 a zeptá se ho znovu s nápovědou, které zobrazení má počítat. Pokud je výběr proveden malým písmenem, nevadí, 
 program ho převede na velké.
